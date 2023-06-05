@@ -47,14 +47,14 @@ app.layout = html.Div((
                      style = {'height': '30px'},
                      className = 'title_image'
                      ),
-            html.H6('KPI Sales Dashboard',
+            html.H6('Burguer King - SIG',
                     style = {'color': 'white'},
                     className = 'title'
                     ),
         ], className = 'logo_title'),
 
         html.Div([
-            html.P('Select Month',
+            html.P('Seleccionar mes: ',
                    style = {'color': 'white'},
                    className = 'drop_down_list_title'
                    ),
@@ -219,7 +219,7 @@ def update_text(select_month):
 
     if revenues_difference > 0:
         return [
-            html.P('Revenues',
+            html.P('Ingresos',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -262,7 +262,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -275,7 +275,7 @@ def update_text(select_month):
 
     elif revenues_difference < 0:
         return [
-            html.P('Revenues',
+            html.P('Ingresos',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -318,7 +318,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -367,7 +367,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -450,7 +450,7 @@ def update_text(select_month):
 
     if profit_difference > 0:
         return [
-            html.P('Profit',
+            html.P('Ganancias',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -493,7 +493,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -506,7 +506,7 @@ def update_text(select_month):
 
     elif profit_difference < 0:
         return [
-            html.P('Profit',
+            html.P('Ganancias',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -549,7 +549,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -598,7 +598,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -679,7 +679,7 @@ def update_text(select_month):
 
     if orders_difference > 0:
         return [
-            html.P('Orders Placed',
+            html.P('Pedidos realizados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -722,7 +722,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -735,7 +735,7 @@ def update_text(select_month):
 
     elif orders_difference < 0:
         return [
-            html.P('Orders Placed',
+            html.P('Pedidos realizados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -778,7 +778,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -791,7 +791,7 @@ def update_text(select_month):
 
     elif orders_difference == 0:
         return [
-            html.P('Orders Placed',
+            html.P('Pedidos realizados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -827,7 +827,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -908,7 +908,7 @@ def update_text(select_month):
 
     if Customers_difference > 0:
         return [
-            html.P('Customers',
+            html.P('Clientes',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -951,7 +951,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -964,7 +964,7 @@ def update_text(select_month):
 
     elif Customers_difference < 0:
         return [
-            html.P('Customers',
+            html.P('Clientes',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1007,7 +1007,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1056,7 +1056,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1137,7 +1137,7 @@ def update_text(select_month):
 
     if items_difference > 0:
         return [
-            html.P('Purchased Items',
+            html.P('Productos comprados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1180,7 +1180,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1193,7 +1193,7 @@ def update_text(select_month):
 
     elif items_difference < 0:
         return [
-            html.P('Purchased Items',
+            html.P('Productos comprados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1236,7 +1236,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1285,7 +1285,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1370,7 +1370,7 @@ def update_text(select_month):
 
     if conversion_difference > 0:
         return [
-            html.P('Conversion Rate',
+            html.P('Tasa de conversión',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1413,7 +1413,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1426,7 +1426,7 @@ def update_text(select_month):
 
     elif conversion_difference < 0:
         return [
-            html.P('Conversion Rate',
+            html.P('Tasa de conversión',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1469,7 +1469,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1518,7 +1518,7 @@ def update_text(select_month):
                            ),
                 ], className = 'difference_value_row'),
 
-                html.P('vs previous month',
+                html.P('vs mes anterior',
                        style = {
                            'color': 'white',
                            'fontSize': 13,
@@ -1611,7 +1611,7 @@ def update_graph(select_month):
             paper_bgcolor = 'rgba(0,0,0,0)',
             margin = dict(t = 35, b = 10, r = 0, l = 0),
             showlegend = False,
-            title={'text': '% Sales Profit',
+            title={'text': '% Ganancias por ventas',
                    'y': 0.95,
                    'x': 0.5,
                    'xanchor': 'center',
@@ -1819,7 +1819,7 @@ def update_graph(select_month):
              plot_bgcolor='rgba(0,0,0,0)',
              paper_bgcolor='rgba(0,0,0,0)',
              margin = dict(r = 0, t = 30, b = 30),
-             title = {'text': 'Sales Funnel',
+             title = {'text': 'Túnel de ventas',
                       'y': 0.97,
                       'x': 0.5,
                       'xanchor': 'center',
