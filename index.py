@@ -1482,7 +1482,7 @@ def update_text(select_month):
 
     elif conversion_difference == 0:
         return [
-            html.P('Conversion Rate',
+            html.P('Tasa de Conversión',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1672,7 +1672,7 @@ def update_graph(select_month):
                 paper_bgcolor='rgba(0,0,0,0)',
                 margin=dict(t=35, b=10, r=0, l=0),
                 showlegend=False,
-                title={'text': 'Monthly Goal',
+                title={'text': 'Objetivo Mensual',
                        'y': 0.95,
                        'x': 0.5,
                        'xanchor': 'center',
@@ -1699,7 +1699,7 @@ def update_graph(select_month):
             paper_bgcolor = 'rgba(0,0,0,0)',
             margin = dict(t = 35, b = 10, r = 0, l = 0),
             showlegend = False,
-            title={'text': 'Monthly Goal',
+            title={'text': 'Objetivo Mensual',
                    'y': 0.95,
                    'x': 0.5,
                    'xanchor': 'center',
@@ -1754,7 +1754,7 @@ def update_graph(select_month):
             paper_bgcolor = 'rgba(0,0,0,0)',
             margin = dict(t = 35, b = 10, r = 0, l = 0),
             showlegend = False,
-            title={'text': 'YTD Goal',
+            title={'text': 'Objetivo Anual',
                    'y': 0.95,
                    'x': 0.5,
                    'xanchor': 'center',
@@ -1878,7 +1878,7 @@ def update_graph(select_month):
         'layout': go.Layout(
             plot_bgcolor = 'rgba(0,0,0,0)',
             paper_bgcolor = 'rgba(0,0,0,0)',
-            title = {'text': 'Revenue vs Target',
+            title = {'text': 'Ingresos vs Objetivo',
                      'y': 0.97,
                      'x': 0.5,
                      'xanchor': 'center',
@@ -1960,7 +1960,7 @@ def update_graph(select_month):
             barmode = 'overlay',
             plot_bgcolor = 'rgba(0,0,0,0)',
             paper_bgcolor = 'rgba(0,0,0,0)',
-            title = {'text': 'Sales vs Goal',
+            title = {'text': 'Ventas vs Objetivo',
                      'y': 0.97,
                      'x': 0.5,
                      'xanchor': 'center',
@@ -2039,7 +2039,7 @@ def update_graph(select_month):
         'layout': go.Layout(
             plot_bgcolor = 'rgba(0,0,0,0)',
             paper_bgcolor = 'rgba(0,0,0,0)',
-            title = {'text': 'Monthly Sales Growth',
+            title = {'text': 'Crecimiento mensual de ventas',
                      'y': 0.97,
                      'x': 0.5,
                      'xanchor': 'center',
@@ -2092,7 +2092,7 @@ def update_text(select_month):
 
     return [
         html.Div([
-            html.P('AVG Sales / Customer',
+            html.P('AVG Ventas/Clientes',
                    style = {
                        'color': 'white',
                        'fontSize': 15,
@@ -2169,7 +2169,7 @@ def update_text(select_month):
 
     return [
         html.Div([
-            html.P('AVG Ticket Sales',
+            html.P('AVG venta de pedidos',
                    style = {
                        'color': 'white',
                        'fontSize': 15,
@@ -2236,4 +2236,4 @@ def update_graph(select_month):
 
 
 if __name__ == "__main__":
-    app.run_server(debug = True)
+        app.run_server(debug = True)
