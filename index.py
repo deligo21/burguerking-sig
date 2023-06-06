@@ -1855,7 +1855,7 @@ def update_graph(select_month):
         filter_month = data[data['Months'] == select_month]
         target = filter_month['Target'].iloc[0]
         revenues = filter_month['Revenues'].iloc[0]
-        object_data = [['Target', target], ['Revenues', revenues]]
+        object_data = [['Objetivo', target], ['Ingresos', revenues]]
         df2 = pd.DataFrame(object_data, columns = ['Text', 'Value'])
 
     return {
