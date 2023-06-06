@@ -331,7 +331,7 @@ def update_text(select_month):
 
     elif revenues_difference == 0:
         return [
-            html.P('Revenues',
+            html.P('Ingresos',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -562,7 +562,7 @@ def update_text(select_month):
 
     elif profit_difference == 0:
         return [
-            html.P('Profit',
+            html.P('Ganancias',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1020,7 +1020,7 @@ def update_text(select_month):
 
     elif Customers_difference == 0:
         return [
-            html.P('Revenues',
+            html.P('Clientes',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1137,7 +1137,7 @@ def update_text(select_month):
 
     if items_difference > 0:
         return [
-            html.P('Productos comprados',
+            html.P('Productos Comprados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1193,7 +1193,7 @@ def update_text(select_month):
 
     elif items_difference < 0:
         return [
-            html.P('Productos comprados',
+            html.P('Productos Comprados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1249,7 +1249,7 @@ def update_text(select_month):
 
     elif items_difference == 0:
         return [
-            html.P('Purchased Items',
+            html.P('Productos Comprados',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1370,7 +1370,7 @@ def update_text(select_month):
 
     if conversion_difference > 0:
         return [
-            html.P('Tasa de conversión',
+            html.P('Tasa de Conversión',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1426,7 +1426,7 @@ def update_text(select_month):
 
     elif conversion_difference < 0:
         return [
-            html.P('Tasa de conversión',
+            html.P('Tasa de Conversión',
                    style = {
                        'color': 'white',
                        'fontSize': 17,
@@ -1611,7 +1611,7 @@ def update_graph(select_month):
             paper_bgcolor = 'rgba(0,0,0,0)',
             margin = dict(t = 35, b = 10, r = 0, l = 0),
             showlegend = False,
-            title={'text': '% Ganancias por ventas',
+            title={'text': 'Ganancias por ventas',
                    'y': 0.95,
                    'x': 0.5,
                    'xanchor': 'center',
@@ -1794,7 +1794,7 @@ def update_graph(select_month):
         lead = filter_month['Lead'].iloc[0]
         opportunity = filter_month['Opportunity'].iloc[0]
         sales = filter_month['Sales'].iloc[0]
-        object_data = [['Inquiries', inquiries], ['Lead', lead], ['Opportunity', opportunity], ['Sales', sales]]
+        object_data = [['Consultas', inquiries], ['Cli. Potencial', lead], ['Oportunidad', opportunity], ['Ventas', sales]]
         df = pd.DataFrame(object_data, columns = ['Text', 'Value'])
         df1 = df.sort_values(by = ['Value'], ascending = False)
 
@@ -1819,7 +1819,7 @@ def update_graph(select_month):
              plot_bgcolor='rgba(0,0,0,0)',
              paper_bgcolor='rgba(0,0,0,0)',
              margin = dict(r = 0, t = 30, b = 30),
-             title = {'text': 'Túnel de ventas',
+             title = {'text': 'Embudo de ventas',
                       'y': 0.97,
                       'x': 0.5,
                       'xanchor': 'center',
@@ -1933,7 +1933,7 @@ def update_graph(select_month):
     return {
         'data': [go.Bar(x = months,
                         y = above_the_target,
-                        name = 'Above the Target',
+                        name = 'Por encima del objetivo',
                         marker = dict(color='#00B0F0'),
                         width = 0.5,
                         orientation = 'v',
@@ -1941,7 +1941,7 @@ def update_graph(select_month):
                         ),
                  go.Bar(x = months,
                         y = data['Below the Target'],
-                        name = 'Below the Target',
+                        name = 'Por debajo del objetivo',
                         marker = dict(color = '#EBD18C'),
                         width = 0.5,
                         orientation = 'v',
@@ -1949,7 +1949,7 @@ def update_graph(select_month):
                         ),
                  go.Scatter(x = months,
                             y = sales_target,
-                            name = 'Sales Target',
+                            name = 'Objetivo de ventas',
                             mode = 'markers',
                             marker = dict(color = '#7030A0', size = 25, symbol = 'line-ew',
                                           line = dict(color = '#E6314C', width = 5)),
@@ -2169,10 +2169,10 @@ def update_text(select_month):
 
     return [
         html.Div([
-            html.P('AVG venta de pedidos',
+            html.P('AVG Ventas por Pedido',
                    style = {
                        'color': 'white',
-                       'fontSize': 15,
+                       'fontSize': 13,
                        'font-weight': 'bold'
                    }, className = 'average_sales_text'),
             html.P('${0:,.0f}'.format(average_ticket_sales),
