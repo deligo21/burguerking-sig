@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /*background-color: rgb(34, 37, 49);*/
+    background-color: #13082a !important;
 }
 
 .title_image {
@@ -39,8 +39,10 @@ body {
 
 /* Drop down list - background color, text color and border color */
 .Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
-  background-color: #335476;
+  background: rgba (0,0,0,0.33);
   color: white;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
 }
 
 .Select-control{
@@ -86,12 +88,16 @@ body {
    justify-content: center;
    gap: 30px;
    top: 0;
-   background-color: #335476;
+   background-color: rgba (0,0,0,0.33);
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #00000049;
    width: 100%;
 }
 
 .card_size {
-   background-color: #335476;
+   background-color: rgba (0,0,0,0.33);
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #00000049;
    width: 250px;
    height: 160px;
 }
@@ -185,9 +191,11 @@ body {
 }
 
 .donut_chart_size {
-   background-color: #335476;
+   background-color: rgba (0,0,0,0.33);
    width: 250px;
    height: 196.8px;
+   border-radius: 20px;
+   box-shadow: 7px 7px 10px #00000049;
 }
 
 .donut_chart_text {
@@ -211,10 +219,12 @@ body {
 }
 
 .funnel_chart_size {
-  background-color: #335476;
+  background-color: rgba (0,0,0,0.33);
   width: 350px;
   height: 300px;
   margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
 }
 
 .create_row {
@@ -226,9 +236,11 @@ body {
 }
 
 .bar_chart_size {
-  background-color: #335476;
+  background-color: rgba (0,0,0,0.33);
   width: 350px;
   height: 300px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
   margin-top: 10px;
 }
 
@@ -238,16 +250,20 @@ body {
 }
 
 .stack_bar_chart_size {
-  background-color: #335476;
+  background-color: rgba (0,0,0,0.33);
   width: 930px;
   height: 300px;
   margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
 }
 
 .percent_bar_chart_size {
-  background-color: #335476;
+  background-color: rgba (0,0,0,0.33);
   width: 465px;
   height: 300px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
   margin-top: 10px;
 }
 
@@ -257,9 +273,11 @@ body {
 }
 
 .background_size1 {
-  background-color: #335476;
+  background-color: rgba (0,0,0,0.33);
   width: 456px;
   height: 147.5px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
 }
 
 .chart_text1 {
@@ -289,11 +307,13 @@ body {
 }
 
 .background_size2 {
-  background-color: #335476;
+  background-color: rgba (0,0,0,0.33);
   width: 456px;
   height: 147.5px;
   margin-top: 5px;
   position: absolute;
+  border-radius: 20px;
+  box-shadow: 7px 7px 10px #00000049;
 }
 
 .chart_text2 {

@@ -1593,13 +1593,13 @@ def update_graph(select_month):
         filter_month = data[data['Months'] == select_month]
         percentage_profit = filter_month['% Profit'].iloc[0]
         remaining_percentage_profit = 100 - (filter_month['% Profit'].iloc[0])
-        colors = ['#DEB340', '#335476']
+        colors = ['#7879f1', 'rgba (0,0,0,0.33)']
 
     return {
         'data': [go.Pie(labels = ['', ''],
                         values = [percentage_profit, remaining_percentage_profit],
                         marker = dict(colors = colors,
-                                      line=dict(color='#DEB340', width=2)),
+                                      line=dict(color='#7879f1', width=2)),
                         hoverinfo = 'skip',
                         textinfo = 'text',
                         hole = .7,
@@ -1635,7 +1635,7 @@ def update_text(select_month):
     return [
         html.P('{0:,.0f}%'.format(percentage_profit),
                style = {
-                   'color': '#DEB340',
+                   'color': '#7879f1',
                    'fontSize': 25,
                    'font-weight': 'bold'
                }),
@@ -1653,14 +1653,14 @@ def update_graph(select_month):
         percentage_target = filter_month['% Target'].iloc[0]
         percentage_target1 = float(100.00)
         remaining_percentage_target = 100 - (filter_month['% Target'].iloc[0])
-        colors = ['#DEB340', '#335476']
+        colors = ['#7879f1', 'rgba (0,0,0,0.33)']
 
     if percentage_target > 100:
         return {
             'data': [go.Pie(labels=['', ''],
                             values=[percentage_target1],
                             marker=dict(colors=colors,
-                                        line=dict(color='#DEB340', width=2)),
+                                        line=dict(color='#7879f1', width=2)),
                             hoverinfo='skip',
                             textinfo='text',
                             hole=.7,
@@ -1687,7 +1687,7 @@ def update_graph(select_month):
         'data': [go.Pie(labels = ['', ''],
                         values = [percentage_target, remaining_percentage_target],
                         marker = dict(colors = colors,
-                                      line=dict(color='#DEB340', width=2)),
+                                      line=dict(color='#7879f1', width=2)),
                         hoverinfo = 'skip',
                         textinfo = 'text',
                         hole = .7,
@@ -1723,7 +1723,7 @@ def update_text(select_month):
     return [
         html.P('{0:,.0f}%'.format(percentage_target),
                style = {
-                   'color': '#DEB340',
+                   'color': '#7879f1',
                    'fontSize': 25,
                    'font-weight': 'bold'
                }),
@@ -1736,13 +1736,13 @@ def update_graph(select_month):
     total_revenues = data['Revenues'].sum()
     total_target = data['Target'].sum()
     ytd_goal = (total_revenues / total_target) * 100
-    colors = ['#DEB340']
+    colors = ['#7879f1']
 
     return {
         'data': [go.Pie(labels = [''],
                         values = [ytd_goal],
                         marker = dict(colors = colors,
-                                      line=dict(color='#DEB340', width=2)),
+                                      line=dict(color='#7879f1', width=2)),
                         hoverinfo = 'skip',
                         textinfo = 'text',
                         hole = .7,
@@ -1776,7 +1776,7 @@ def update_text(select_month):
     return [
         html.P('{0:,.0f}%'.format(ytd_goal),
                style = {
-                   'color': '#DEB340',
+                   'color': '#7879f1',
                    'fontSize': 25,
                    'font-weight': 'bold'
                }),
@@ -1810,7 +1810,7 @@ def update_graph(select_month):
                     size = 14,
                     color = "#A23C33"
                 ),
-                marker = {"color": '#DEB340'},
+                marker = {"color": '#7879f1'},
                 hoverinfo = 'skip',
             )],
 
@@ -1864,7 +1864,7 @@ def update_graph(select_month):
                         text = df2['Value'],
                         texttemplate = '$' + '%{text:,.0f}',
                         textposition = 'inside',
-                        marker = dict(color='#DEB340'),
+                        marker = dict(color='#7879f1'),
                         width = 0.5,
                         textfont = dict(
                             family = "Arial Black",
@@ -2001,7 +2001,7 @@ def update_graph(select_month):
                          ),
             legend = {
                 'orientation': 'h',
-                'bgcolor': '#335476',
+                'bgcolor': 'rgba (0,0,0,0.33)',
                 'xanchor': 'center', 'x': 0.5, 'y': -0.2},
             font = dict(
                 family = "sans-serif",
@@ -2016,7 +2016,7 @@ def update_graph(select_month):
 def update_graph(select_month):
     monthly_sales_growth = data['pct_Difference']
     months = data['Months']
-    data['Color'] = np.where(data['pct_Difference'] > 0, '#DEB340', '#A23C33')
+    data['Color'] = np.where(data['pct_Difference'] > 0, '#7879f1', '#A23C33')
 
 
     return {
