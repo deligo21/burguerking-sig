@@ -28,6 +28,7 @@ body {
    display: flex;
    flex-direction: row;
    margin-top: 29px;
+   
 }
 
 .drop_down_list {
@@ -40,7 +41,7 @@ body {
 /* Drop down list - background color, text color and border color */
 .Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
   background: rgba (0,0,0,0.33);
-  color: white;
+  color: black;
   border-radius: 20px;
   box-shadow: 7px 7px 10px #00000049;
 }
@@ -50,7 +51,7 @@ body {
 }
 
 .has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
-  color: white;
+  color: black;
 }
 
 /* width of drop down list and page scrollbar */

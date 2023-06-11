@@ -43,7 +43,7 @@ app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 app.layout = html.Div((
     html.Div([
         html.Div([
-            html.Img(src = app.get_asset_url('statistics.png'),
+            html.Img(src = app.get_asset_url('bk.png'),
                      style = {'height': '30px'},
                      className = 'title_image'
                      ),
@@ -62,7 +62,7 @@ app.layout = html.Div((
                          multi = False,
                          clearable = True,
                          disabled = False,
-                         style = {'display': True},
+                         style = {'display': True,},
                          value = 'MAR',
                          placeholder = 'Select Month',
                          options = [{'label': c, 'value': c}
@@ -1808,7 +1808,7 @@ def update_graph(select_month):
                 textfont = dict(
                     family = "Arial Black",
                     size = 14,
-                    color = "#A23C33"
+                    color = "#ffffff"
                 ),
                 marker = {"color": '#7879f1'},
                 hoverinfo = 'skip',
@@ -1869,7 +1869,7 @@ def update_graph(select_month):
                         textfont = dict(
                             family = "Arial Black",
                             size = 14,
-                            color = "#A23C33"
+                            color = "#ffffff"
                         ),
                         orientation = 'h',
                         hoverinfo = 'skip'
